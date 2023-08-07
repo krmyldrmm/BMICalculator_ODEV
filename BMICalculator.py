@@ -28,7 +28,7 @@ def bmi_calculate():
         try:
             weight = weight_entry.get()
             height = height_entry.get()
-            result = round(int(weight) / (int(height) / 100) ** 2, 1)
+            result = round(float(weight) / (float(height) / 100) ** 2, 1)
         except ZeroDivisionError:
             result_label.config(text="Boy '0' olamaz")
         except ValueError:
