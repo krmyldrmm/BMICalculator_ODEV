@@ -59,7 +59,7 @@ def bmi_calculate():
 calculate_button = Button(text="Hesapla", command=bmi_calculate)
 calculate_button.pack()
 
-# RESULT
+# INVISIBLE RESULT LABEL
 result_label = Label(text="")
 result_label.pack_forget()
 
